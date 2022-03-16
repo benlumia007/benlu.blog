@@ -1,7 +1,5 @@
 <?php 
 
-use Illuminate\Support\Str;
-
 return [
     'build' => [
         'source' => 'public'
@@ -21,7 +19,17 @@ return [
         ]
     ],
 
-    'selected' => function( $page, $selection ) {
-        return Str::contains( $page->getPath(), $selection ) ? 'active' : '';
-    },
+    'collections' => [
+        'posts' => [
+            'author' => 'Benjamin Lu',
+            'path'  => 'blog/{-title}',
+            'sort' => 'date',
+            'getDate' => function( $page ) {
+                return Datetime::createFromFormat( 'U', $page->date );
+            },
+            'hasCategory' => function ( $page, $category ) {
+                return collect( $page->categories )->contains( $category );
+            },
+        ],
+    ],
 ];

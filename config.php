@@ -6,5 +6,8 @@ return [
     ],
 
     // A custom title for the site.
-    'siteTitle' => 'Benjamin Lu'
+    'siteTitle' => 'Benjamin Lu',
+
+    // A custom tagline for the site.
+    'siteTagline' => 'PHP Developer'
 ];

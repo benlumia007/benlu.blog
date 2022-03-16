@@ -1,5 +1,7 @@
 <?php 
 
+use Illuminate\Support\Str;
+
 return [
     'build' => [
         'source' => 'public'
@@ -9,5 +11,13 @@ return [
     'siteTitle' => 'Benjamin Lu',
 
     // A custom tagline for the site.
-    'siteTagline' => 'PHP Developer'
+    'siteTagline' => 'PHP Developer',
+
+    // A custom primary menu for the site.
+    'primaryMenu' => [
+        [
+            'link' => '/about-me',
+            'title' => 'About Me'
+        ]
+    ],
 ];

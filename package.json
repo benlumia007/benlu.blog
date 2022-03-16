@@ -5,5 +5,8 @@
         "dev": "mix",
         "watch": "mix watch",
         "prod": "mix --production"
+    },
+    "devDependencies": {
+        "laravel-mix": "^6.0.43"
     }
 }

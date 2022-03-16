@@ -20,4 +20,8 @@ return [
             'title' => 'About Me'
         ]
     ],
+
+    'selected' => function( $page, $selection ) {
+        return Str::contains( $page->getPath(), $selection ) ? 'active' : '';
+    },
 ];

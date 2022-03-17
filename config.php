@@ -23,7 +23,7 @@ return [
         'posts' => [
             'author' => 'Benjamin Lu',
             'path' => 'archives/{date|Y/m/d}/{-title}',
-            'sort' => 'date',
+            'sort' => '-date',
             'getDate' => function( $page ) {
                 return Datetime::createFromFormat( 'U', $page->date );
             },

@@ -52,7 +52,7 @@
                     '<li class="archives__item flex flex-nowrap items-start justify-left ml-2 %s">%s <span class="archives__post ml-2"><a href="%s" rel="bookmark">%s</a></span></li>',
                     $duplicate_day,
                     $day,
-                    $post->getUrl,
+                    $post->getUrl(),
                     $post->title,
                 );
 

@@ -8,7 +8,7 @@
                     <div class="entry-metadata">
                         <span class="entry-date">{{ $page->getDate()->format( 'F d, Y' ) }}</span>
                     </div>
-                    <h1 class="entry-title"><a href="{{ $page->getUrl() }}">{{ $page->title }}</a></h1>
+                    <h1 class="entry-title">{{ $page->title }}</h1>
                 </header>
                 <div class="entry-content">
                     @yield( 'content' )

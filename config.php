@@ -14,13 +14,13 @@ return [
     // A custom primary menu for the site.
     'primaryMenu' => [
         [
+            'link'  => '/about',
+            'title' => 'About'
+        ],
+        [
             'link'  => '/archives',
             'title' => 'Archives'
         ],
-        [
-            'link'  => '/about-me',
-            'title' => 'About Me'
-        ]
     ],
 
     'collections' => [

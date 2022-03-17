@@ -14,7 +14,11 @@ return [
     // A custom primary menu for the site.
     'primaryMenu' => [
         [
-            'link' => '/about-me',
+            'link'  => '/archives',
+            'title' => 'Archives'
+        ],
+        [
+            'link'  => '/about-me',
             'title' => 'About Me'
         ]
     ],

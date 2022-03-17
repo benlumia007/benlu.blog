@@ -22,7 +22,7 @@ return [
     'collections' => [
         'posts' => [
             'author' => 'Benjamin Lu',
-            'path' => '{date|Y/m/d}/{-title}',
+            'path' => 'archives/{date|Y/m/d}/{-title}',
             'sort' => 'date',
             'getDate' => function( $page ) {
                 return Datetime::createFromFormat( 'U', $page->date );

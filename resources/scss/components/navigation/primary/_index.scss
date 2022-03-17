@@ -1,0 +1,302 @@
+// iPhone Xr
+
+@media screen and ( max-width: 480px ) {
+    .menu-primary {
+        display: block;
+        width: 100%;
+
+        .menu-toggle {
+            background: color( color( black ) );
+            border: 0.125rem solid color( white );
+            bottom: 1.125rem;
+            color: color( white );
+            cursor: pointer;
+            display: block;
+            font-family: font-family( primary );
+            left: 1.125rem;
+            padding: 0.5rem 1rem;
+            position: fixed;
+            transition: all ease-out 300ms;
+
+            &.hide {
+                bottom: -2.25rem;
+            }
+        }
+    
+        .menu-items {
+            background: color( color( black) );
+            bottom: 1rem;
+            display: none;
+            list-style-type: none;
+            margin: 0;  // do not touch
+            padding: 0; // do not touch
+    
+            .menu-item {
+                margin: 0;
+                padding: 0.813rem 1rem;
+
+                a {
+                    color: color( white );
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &.toggled {
+            bottom: 3rem;
+            margin: 0;
+            position: fixed;
+
+            .menu-toggle {
+                &.hide {
+                    bottom: 1.125rem;
+                }
+            }
+
+            .menu-items {
+                display: block;
+                margin: 1.125rem;
+
+                .menu-item {
+                    a {
+                        border-bottom: none;
+                        color: color( white );
+                        text-decoration: none;
+    
+                        &.active {
+                            color: #ffffff;
+                            pointer-events: none;
+                            cursor: default;
+                        }
+                    }
+                }
+
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width: 481px ) and ( max-width: 600px ) {
+    .menu-primary {
+        display: block;
+        width: 100%;
+
+        .menu-toggle {
+            background: color( color( black ) );
+            border: 0.125rem solid color( white );
+            bottom: 1.125rem;
+            color: color( white );
+            cursor: pointer;
+            display: block;
+            font-family: font-family( primary );
+            left: 1.125rem;
+            padding: 0.5rem 1rem;
+            position: fixed;
+            transition: all ease-out 300ms;
+
+            &.hide {
+                bottom: -2.25rem;
+            }
+        }
+    
+        .menu-items {
+            background: color( color( black) );
+            bottom: 1rem;
+            display: none;
+            list-style-type: none;
+            margin: 0;  // do not touch
+            padding: 0; // do not touch
+    
+            .menu-item {
+                margin: 0;
+                padding: 0.813rem 1rem;
+
+                a {
+                    color: color( white );
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &.toggled {
+            bottom: 3rem;
+            margin: 0;
+            position: fixed;
+
+            .menu-toggle {
+                &.hide {
+                    bottom: 1.125rem;
+                }
+            }
+
+            .menu-items {
+                display: block;
+                margin: 1.125rem;
+
+                .menu-item {
+                    a {
+                        border-bottom: none;
+                        color: color( white );
+                        text-decoration: none;
+    
+                        &.active {
+                            color: #ffffff;
+                            pointer-events: none;
+                            cursor: default;
+                        }
+                    }
+                }
+
+            }
+        }
+        
+    }
+}
+
+@media screen and (min-width: 601px ) and ( max-width: 768px ) {
+    .menu-primary {
+        display: block;
+        width: 100%;
+
+        .menu-toggle {
+            background: color( color( black ) );
+            border: 0.125rem solid color( white );
+            bottom: 1.125rem;
+            color: color( white );
+            cursor: pointer;
+            display: block;
+            font-family: font-family( primary );
+            left: 1.125rem;
+            padding: 0.5rem 1rem;
+            position: fixed;
+            transition: all ease-out 300ms;
+
+            &.hide {
+                bottom: -2.25rem;
+            }
+        }
+    
+        .menu-items {
+            background: color( color( black) );
+            bottom: 1rem;
+            display: none;
+            list-style-type: none;
+            margin: 0;  // do not touch
+            padding: 0; // do not touch
+    
+            .menu-item {
+                margin: 0;
+                padding: 0.813rem 1rem;
+
+                a {
+                    color: color( white );
+                    text-decoration: none;
+                }
+            }
+        }
+
+        &.toggled {
+            bottom: 3rem;
+            margin: 0;
+            position: fixed;
+
+            .menu-toggle {
+                &.hide {
+                    bottom: 1.125rem;
+                }
+            }
+
+            .menu-items {
+                display: block;
+                margin: 1.125rem;
+
+                .menu-item {
+                    a {
+                        border-bottom: none;
+                        color: color( white );
+                        text-decoration: none;
+    
+                        &.active {
+                            color: #ffffff;
+                            pointer-events: none;
+                            cursor: default;
+                        }
+                    }
+                }
+
+            }
+        }
+        
+    }
+}
+
+@media screen and ( min-width: 769px ) and ( max-width: 1024px ) {
+    .menu-primary {
+        background: transparent;
+        padding: 0.5rem;
+
+        .menu-toggle {
+            display: none;
+        }
+
+        .menu-items {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+
+            .menu-item {
+                display: inline-block;
+                padding: 0.5rem 1rem;
+
+                a {
+                    border-bottom: none;
+                    color: color( black );
+                    text-decoration: none;
+
+                    &.active {
+                        color: #000000;
+                        pointer-events: none;
+                        cursor: default;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and ( min-width: 1025px ) {
+    .menu-primary {
+        background: transparent;
+        padding: 0.5rem;
+
+        .menu-toggle {
+            display: none;
+        }
+
+        .menu-items {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+
+            .menu-item {
+                display: inline-block;
+                padding: 0.5rem 1rem;
+
+                a {
+                    border-bottom: none;
+                    color: color( black );
+                    text-decoration: none;
+
+                    &.active {
+                        color: #000000;
+                        pointer-events: none;
+                        cursor: default;
+                    }
+                }
+            }
+        }
+    }
+}

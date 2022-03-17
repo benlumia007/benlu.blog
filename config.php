@@ -9,7 +9,7 @@ return [
     'siteTitle' => 'Benjamin Lu',
 
     // A custom tagline for the site.
-    'siteTagline' => 'PHP Developer',
+    'siteTagline' => '',
 
     // A custom primary menu for the site.
     'primaryMenu' => [

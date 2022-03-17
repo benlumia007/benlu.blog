@@ -1,3 +1,3 @@
 ---
-extends: _layouts.main
+extends: _layouts.home
 ---

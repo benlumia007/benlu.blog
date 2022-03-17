@@ -2,3 +2,6 @@ build_local
 node_modules
 public/assets
 vendor
+
+composer.lock
+package-lock.json

@@ -22,7 +22,7 @@ return [
     'collections' => [
         'posts' => [
             'author' => 'Benjamin Lu',
-            'path'  => 'blog/{-title}',
+            'path' => '{date|Y/m/d}/{-title}',
             'sort' => 'date',
             'getDate' => function( $page ) {
                 return Datetime::createFromFormat( 'U', $page->date );
@@ -30,6 +30,13 @@ return [
             'hasCategory' => function ( $page, $category ) {
                 return collect( $page->categories )->contains( $category );
             },
+        ],
+        'categories' => [
+            'path' => '/category/{filename}',
+            'extends' => '_layouts.category',
+            'name' => function( $page ) {
+                return $page->getFilename();
+            }
         ],
     ],
 ];

@@ -40,7 +40,7 @@
         @yield( 'body' )
         <footer id="footer" class="site-footer">
             <div class="site-info">
-                Powered by love and heart
+                Powered by <a href="https://jigsaw.tighten.com" target="_blank">Jigsaw</a> and heart
             </div>
         </footer>
     </section>

@@ -17,3 +17,4 @@ mix.jigsaw()
     .options( {
         processCssUrls: false,
     } )
+    .version()

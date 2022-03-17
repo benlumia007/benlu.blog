@@ -4,7 +4,7 @@
 <section id="content" class="site-content">
     <div class="content-area">
         <div class="archive-header">
-            <h1 class="archive-title">{{ $page->year }}</h1>
+            <h1 class="archive-title">{{ \Carbon\Carbon::createFromDate( $page->year, 1 )->format( 'Y' ) }}</h1>
         </div>
         @foreach ( $page->getPostsForYear( $posts ) as $post )
             <article class="post">

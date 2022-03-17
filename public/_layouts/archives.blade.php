@@ -3,6 +3,7 @@
 @section( 'body' ) 
 <section id="content" class="site-content">
     <div class="content-area">
+        <h1>{{ $page->title }}</h1>
         @foreach ( $posts as $post )
             <?php
                 $current_year = $current_month = $current_day = '';

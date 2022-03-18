@@ -5,6 +5,9 @@ return [
         'source' => 'public'
     ],
 
+    // base url
+    'baseUrl' => 'https://benlu.test',
+
     // A custom title for the site.
     'siteTitle' => 'Benjamin Lu',
 

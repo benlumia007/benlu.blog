@@ -6,7 +6,8 @@ return [
     ],
 
     // base url
-    'baseUrl' => 'https://benlu.blog',
+    'baseUrl' => 'https://benlu.test',
+    'production' => false,
 
     // A custom title for the site.
     'siteTitle' => 'Benjamin Lu',

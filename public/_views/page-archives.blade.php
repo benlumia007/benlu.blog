@@ -12,6 +12,7 @@
             </div>
         </article>
         <div class="archive-content">
+            <?php $current_year = $current_month = $current_day = ''; ?>
             <?php foreach ( $posts as $post ) :
                 $timestamp = is_numeric( $post->date ) ? $post->date : strtotime( $post->date );
 

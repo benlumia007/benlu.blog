@@ -2,7 +2,7 @@
 
 return [
     'build' => [
-        'source' => 'public'
+        'source' => 'public',
     ],
 
     // base url

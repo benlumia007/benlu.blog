@@ -1,4 +1,4 @@
-@extends( '_layouts.main' )
+@extends( '_views.templates.main' )
 
 @section( 'body' )
 <section id="content" class="site-content">

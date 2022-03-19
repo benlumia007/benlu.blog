@@ -29,6 +29,8 @@ return [
 
     'collections' => [
         'posts' => [
+            'extends' => '_views.single',
+            'section' => 'content',
             'author' => 'Benjamin Lu',
             'path' => 'archives/{date|Y/m/d}/{-title}',
             'sort' => '-date',
@@ -40,8 +42,9 @@ return [
             },
         ],
         'categories' => [
+            'extends' => '_views.category',
+            'section' => 'content',
             'path' => '/category/{filename}',
-            'extends' => '_layouts.category',
             'name' => function( $page ) {
                 return $page->getFilename();
             }

@@ -75,7 +75,7 @@ class AddArchivePages extends PseudoCollectionGenerator
      */
     protected function setPostsByYearCollection( Collection $dates, Collection $collections ) {
         $collections->put('posts_by_year', [
-            'extends' => '_layouts.archives.year',
+            'extends' => '_views.archive-year',
             'path' => 'archives/{year}',
             'items' => $this->getYearItems($dates),
         ]);
@@ -89,7 +89,7 @@ class AddArchivePages extends PseudoCollectionGenerator
      */
     protected function setPostsByMonthCollection( Collection $dates, Collection $collections ) {
         $collections->put('posts_by_month', [
-            'extends' => '_layouts.archives.month',
+            'extends' => '_views.archive-month',
             'path' => 'archives/{year}/{month}',
             'items' => $this->getMonthItems( $dates ),
         ]);
@@ -103,7 +103,7 @@ class AddArchivePages extends PseudoCollectionGenerator
      */
     protected function setPostsByDayCollection( Collection $dates, Collection $collections ) {
         $collections->put( 'posts_by_day', [
-            'extends' => '_layouts.archives.day',
+            'extends' => '_views.archive-day',
             'path' => 'archives/{year}/{month}/{day}',
             'items' => $this->getDayItems( $dates ),
         ]);

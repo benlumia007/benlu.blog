@@ -1,5 +1,5 @@
 ---
 title: "Archives"
-extends: _layouts.archives
+extends: _views.page-archives
 ---
 This is wehre the archives goes

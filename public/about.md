@@ -1,6 +1,6 @@
 ---
 title: "About"
-extends: _layouts.about
+extends: _views.page
 section: content
 ---
 test

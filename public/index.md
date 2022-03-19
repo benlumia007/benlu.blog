@@ -1,3 +1,3 @@
 ---
-extends: _layouts.home
+extends: _views.home
 ---

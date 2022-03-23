@@ -6,7 +6,7 @@
         <div class="archive-header">
             <h1 class="archive-title">{{ \Carbon\Carbon::createFromDate( $page->year, $page->month, 1 )->format( 'F Y' ) }}</h1>
         </div>
-        @foreach ( $page->getPostsForYear( $posts ) as $post )
+        @foreach ( $page->getPostsForYearAndMonth( $posts ) as $post )
             <article class="post">
                 <header class="entry-header">
                     <h1 class="entry-title"><a href="{{ $post->getUrl() }}">{{ $post->title }}</a></h1>
